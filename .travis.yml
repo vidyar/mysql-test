@@ -1,12 +1,16 @@
 script: "rspec spec"
+
 language: "ruby"
+
 rvm:
   - 1.9.3
   - 2.0.0
   - jruby-19mode
+
 gemfile:
   - Gemfile
   - Gemfile.rails-3.2.x
   - Gemfile.rails-4.0.x
+
 notifications:
-  disable: true
+  email: false
